@@ -14,7 +14,6 @@ import http, {
 import type {Readable} from 'node:stream';
 import type {Socket} from 'node:net';
 import is, {assert} from '@sindresorhus/is';
-import lowercaseKeys from 'lowercase-keys';
 import CacheableLookup from 'cacheable-lookup';
 import http2wrapper, {type ClientHttp2Session} from 'http2-wrapper';
 import {isFormData, type FormDataLike} from 'form-data-encoder';
