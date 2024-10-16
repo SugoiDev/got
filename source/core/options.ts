@@ -1945,9 +1945,9 @@ export default class Options {
 		assert.plainObject(value);
 
 		if (this._merging) {
-			Object.assign(this._internals.headers, lowercaseKeys(value));
+			Object.assign(this._internals.headers, value);
 		} else {
-			this._internals.headers = lowercaseKeys(value);
+			this._internals.headers = value;
 		}
 	}
 
